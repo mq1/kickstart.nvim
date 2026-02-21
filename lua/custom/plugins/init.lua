@@ -4,6 +4,12 @@
 -- See the kickstart.nvim README for more information
 return {
   {
+    'zbirenbaum/copilot.lua',
+    dependencies = {
+      'copilotlsp-nvim/copilot-lsp',
+    },
+  },
+  {
     'mrcjkb/rustaceanvim',
     version = '^8', -- Recommended
     lazy = false, -- This plugin is already lazy
