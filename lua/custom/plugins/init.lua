@@ -8,6 +8,11 @@ return {
     dependencies = {
       'copilotlsp-nvim/copilot-lsp',
     },
+    opts = {
+      suggestion = {
+        auto_trigger = true,
+      },
+    },
   },
   {
     'mrcjkb/rustaceanvim',
