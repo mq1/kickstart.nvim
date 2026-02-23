@@ -11,6 +11,9 @@ return {
     opts = {
       suggestion = {
         auto_trigger = true,
+        keymap = {
+          accept = '<CR>',
+        },
       },
     },
   },
