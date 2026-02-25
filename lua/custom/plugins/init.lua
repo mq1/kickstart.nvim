@@ -4,17 +4,18 @@
 -- See the kickstart.nvim README for more information
 return {
   {
-    'zbirenbaum/copilot.lua',
+    'Exafunction/windsurf.nvim',
     dependencies = {
-      'copilotlsp-nvim/copilot-lsp',
+      'nvim-lua/plenary.nvim',
+      'hrsh7th/nvim-cmp',
     },
-    opts = {
-      suggestion = {
-        auto_trigger = true,
-        keymap = {
-          accept = '<Tab>',
+    config = function()
+      require('codeium').setup {
+        enable_chat = false,
+        virtual_text = {
+          enabled = true,
         },
-      },
-    },
+      }
+    end,
   },
 }
